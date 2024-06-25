@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI APIs",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "src.app.main:app",
+        "--reload",
+        "--log-level=debug"
+        // "--no-access-log"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+        // "MONGODB_HOST": "localhost",
+        // "MONGODB_PORT": "27017"
+      },
+      "jinja": true,
+      "justMyCode": false
+    },
+    {
+      "name": "Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "internalConsole",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "cwd": "${workspaceFolder}",
+      "args": ["-vv"]
+      // "args": ["tests/api/test_user.py", "-vv"]
+    }
+  ]
+}

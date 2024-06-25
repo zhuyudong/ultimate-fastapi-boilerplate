@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    // "ms-python.isort",
+    "ms-python.flake8",
+    "charliermarsh.ruff",
+    "ms-python.vscode-pylance",
+    // "ms-python.black-formatter",
+    "ms-python.gather",
+    "KevinRose.vsc-python-indent",
+    "njqdev.vscode-python-typehint",
+    "donjayamanne.python-environment-manager",
+    "GitHub.copilot"
+  ]
+}
