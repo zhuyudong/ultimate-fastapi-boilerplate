@@ -32,4 +32,7 @@ pip freeze | grep -E "add-trailing-comma|autoflake|black|flake8|isort|mypy|mypy-
 pre-commit install
 # or
 pre-commit install --allow-missing-config
+
+alembic init -t async migrations
+
 ```
